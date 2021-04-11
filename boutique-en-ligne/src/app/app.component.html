@@ -1,9 +1,8 @@
 
   <header>
-    <nav class="container">
+    <nav class="container-fluid navigation">
         <div class="card-container pt-3 pb-3">
-
-          <a routerLink="/" style="color:#6c6062;" class="name" (click)="onAffiche('home')">Nom de la Boutique</a>
+          <a routerLink="/" style="color:#6c6062;" class="name display-5" (click)="onAffiche('home')">Istanbul moda tunisie</a>
           <a class="h4 lien" routerLink="/shop" routerLinkActive="active" (click)="onAffiche('shop')">Boutique</a>
           <a class="h4 lien" routerLink="/about" routerLinkActive="active" (click)="onAffiche('about')">A propos</a>
           <a class="h4 lien" routerLink="/contact" routerLinkActive="active" (click)="onAffiche('contact')">Contact</a>
@@ -19,28 +18,24 @@
             <fa-icon [icon]="faShoppingBag"></fa-icon>
           </a>
         </div>
-        <div *ngIf="videoShow">
-          <video class="img-fluid" autoplay="true" muted="true" loop="true" preload="auto">
-            <source src="../assets/videos/video.mp4" type="video/mp4">
-          </video>
-          <div class="card-img-overlay d-flex h-50 flex-column my-auto align-items-center justify-content-center text-center text-white">
-            <h2 class="display-2 text">La mode</h2>
-            <h2 class="display-2 text">change</h2>
-            <h2 class="display-2 text">Toujours</h2>
-            <a class="btn btn-lg boutton" href="#">shopping</a>
-          </div>
-        </div>
     </nav>
   </header>
 
-  <main class="container boxFoot mt-5">
-
+  <main class="container-fluid mt-5">
+      <section *ngIf="videoShow">
+        <video class="img-fluid" autoplay="true" muted="true" loop="true" preload="auto">
+          <source src="../assets/videos/video.mp4" type="video/mp4">
+        </video>
+        <div class="card-img-overlay d-flex h-50 flex-column my-auto align-items-center justify-content-center text-center text-white">
+          <h2 class="display-2 text">La mode</h2>
+          <h2 class="display-2 text">change</h2>
+          <h2 class="display-2 text">Toujours</h2>
+          <a class="btn btn-lg boutton" href="/shop">shopping</a>
+        </div>
+      </section>
       <router-outlet></router-outlet>
 
-
       <section class="row mb-5" *ngIf="contactShow">
-
-
         <div class="box col-12 col-sm-6 col-md-3">
           <img src="../assets/images/vetements.jpg" alt="Vêtements" class="image img-fluid">
           <div class="middle">
@@ -90,27 +85,27 @@
       </section>
   </main>
 
-  <footer class="container boxFoot">
-      <div class="row foot">
-        <div class="col-3 col-sm-3 col-md-3 text-center p-5">
-          <h2>BOUTIQUE</h2>
+  <footer class="container-fluid boxFoot">
+      <div class="row foot p-3">
+        <div class="col-5 col-sm-5 col-md-5 text-center p-5">
+          <h3>Istanbul moda tunisie</h3>
         </div>
-        <div class="col-3 col-sm-3 col-md-3 text-center p-5">
-          <h4>Liens Rapides</h4>
+        <div class="col-2 col-sm-2 col-md-2 text-center p-5">
+          <h4>Liens</h4>
         </div>
-        <div class="col-3 col-sm-3 col-md-3 text-center p-5">
+        <div class="col-2 col-sm-2 col-md-2 text-center p-5">
           <h4>Catégories</h4>
         </div>
         <div class="col-3 col-sm-3 col-md-3 text-center p-5">
           <h4>Contactez-nous</h4>
         </div>
-        <div class="col-3 col-sm-3 col-md-3 text-center">
+        <div class="col-5 col-sm-5 col-md-5 text-center">
             <h6>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</h6>
         </div>
-        <div class="col-3 col-sm-3 col-md-3 text-center">
+        <div class="col-2 col-sm-2 col-md-2 text-center">
           <h6>Politique de confidentialité</h6>
         </div>
-        <div class="col-3 col-sm-3 col-md-3 text-center">
+        <div class="col-2 col-sm-2 col-md-2 text-center">
             <h6>Vêtements</h6>
             <h6>Robe Soirée</h6>
             <h6>Accessoires</h6>

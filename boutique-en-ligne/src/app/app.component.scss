@@ -1,4 +1,15 @@
+@font-face {
+  font-family: 'Mermaid';
+  src: url('../assets/police/Mermaid.ttf');
+}
 
+.navigation{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -8,18 +19,18 @@
 
 .name{
   text-decoration: none;
-  font-size: 30px;
   font-weight: bolder;
-
+  font-family: Mermaid;
 }
 
 .lien{
   text-decoration: none;
   color: #1d2547;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   margin-left: 3px;
   margin-right: 3px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .lien:hover{
@@ -71,6 +82,7 @@ nav a.active{
   border: #e5cbce solid 2px;
   text-transform: uppercase;
   margin-top: 2%;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .boutton:hover{
@@ -81,6 +93,7 @@ nav a.active{
 .text{
   text-transform: uppercase;
   font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .box {
@@ -123,21 +136,23 @@ nav a.active{
   font-weight: bold;
   border: #6c6062 solid 2px;
   background-color: transparent;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .title{
   font-weight: bold;
   color: #e5cbce;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .quality{
   background-color: #f5eeef;
   height: 300px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .boxFoot{
-  padding-left: 1.8%;
-  padding-right: 1.8%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .circle-link-foot{

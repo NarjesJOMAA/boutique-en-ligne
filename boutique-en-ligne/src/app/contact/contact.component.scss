@@ -1,10 +1,26 @@
+.moda{
+  background-image: url(../../assets/images/moda.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.margtop{
+  margin-top: 200px;
+}
 .sendbtn{
   color: #e5cbce;
   border: #e5cbce solid 1px;
   background-color: transparent;
   text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
 }
 .sendbtn:hover{
   background-color: #e5cbce;
   color: white;
+}
+
+.textPolice{
+  font-family: 'Open Sans', sans-serif;
 }
